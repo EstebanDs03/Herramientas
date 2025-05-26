@@ -1,0 +1,15 @@
+{
+  "name": "herramientas",
+  "version": "1.0.0",
+  "description": "Uso de herramientas",
+  "license": "MIT",
+  "author": "Juan esteban Arbelaez Durango <je578400@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fechas_esteban_arbelaez": "^1.0.0"
+  }
+}

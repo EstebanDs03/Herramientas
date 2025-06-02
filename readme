@@ -1,78 +1,123 @@
-# Herramientas Node.js
+<h1 align="center">🛠️ Herramientas Node.js</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+</p>
 
-Este proyecto contiene ejemplos y utilidades en Node.js para el manejo de archivos, fechas y consumo de la API de OpenAI para transcripción de audio.
+> Este proyecto contiene ejemplos y utilidades en **Node.js** para el manejo de archivos, fechas y uso de la API de **OpenAI** para transcripción de audio 🎧.
 
-## Estructura del proyecto
+---
 
-- **fechas.js**  
-  Ejemplo de uso de una librería personalizada para formateo y manejo de fechas.
+## 📁 Estructura del Proyecto
 
-- **fs.js**  
-  Ejemplo de operaciones básicas con archivos: crear, leer, actualizar y eliminar archivos de texto usando el módulo `fs` de Node.js.
+- `fechas.js`  
+  📆 Uso de una librería personalizada para el manejo de fechas.
 
-- **fs-openai.js**  
-  Script para transcribir archivos de audio utilizando la API de OpenAI (modelo Whisper). Guarda la transcripción en un archivo de texto.
+- `fs.js`  
+  📄 Operaciones básicas con archivos: crear, leer, actualizar y eliminar usando `fs`.
 
-- **config.js**  
-  Archivo (no incluido en el repositorio) donde se debe colocar la clave API de OpenAI.
+- `fs-openai.js`  
+  🧠 Transcripción de archivos de audio con la API de **OpenAI Whisper**.
 
-## Requisitos
+- `config.js`  
+  🔐 Contiene la clave API de OpenAI *(no incluido por seguridad)*.
 
-- Node.js (recomendado v16 o superior)
+---
+
+## ✅ Requisitos
+
+- [Node.js](https://nodejs.org/) v16 o superior
 - npm
 
-## Instalación
+---
 
-1. Clona el repositorio.
-2. Instala las dependencias necesarias:
+## ⚙️ Instalación
 
-   ```bash
-   npm install node-fetch@2 form-data
-3. Crea un archivo config.js en la raíz del proyecto con el siguiente contenido:
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/EstebanDs03/tu-repo-aqui.git
+
+# 2. Entra en el directorio
+cd tu-repo-aqui
+
+# 3. Instala las dependencias
+npm install node-fetch@2 form-data
+```
+
+---
+
+## 🔐 Configuración
+
+Crea un archivo `config.js` en la raíz con este contenido:
+
+```js
 module.exports = {
   openaiApiKey: "TU_API_KEY_AQUI"
 };
-Nota: config.js está en .gitignore para proteger tu clave.
+```
 
-Uso
-Ejecuta cualquiera de los scripts con Node.js, por ejemplo:
+📌 **Nota:** `config.js` está en `.gitignore` para proteger tu clave.
 
+---
+
+## 🚀 Uso
+
+Ejecuta los scripts con Node:
+
+```bash
 node fechas.js
 node fs.js
 node fs-openai.js
+```
 
-Para transcribir audio, asegúrate de tener saldo o cuota disponible en tu cuenta de OpenAI.
+🎧 Para usar la transcripción de audio, asegúrate de tener saldo o cuota activa en tu cuenta de OpenAI.
 
-Fechas Esteban Arbeláez
-Este proyecto proporciona funciones sencillas para trabajar con fechas y horas en JavaScript.
+---
 
-Funciones incluidas
-getTimestamp()
-Devuelve la marca de tiempo actual en milisegundos desde el 1 de enero de 1970 (Epoch).
+## 📦 Funciones de Fechas
 
-Ejemplo de uso:
+Este proyecto incluye funciones simples para trabajar con fechas y horas en JavaScript.
+
+### `getTimestamp()`
+
+📅 Devuelve la marca de tiempo actual en milisegundos desde Epoch.
+
+```js
 const { getTimestamp } = require('./src/index');
-console.log(getTimestamp()); // ejemplo: 1716643200000
+console.log(getTimestamp()); // Ejemplo: 1716643200000
+```
 
-getLongTime(locale = "es-ES")
-Devuelve la fecha y hora actual en formato largo, localizada según el parámetro locale.
-Por defecto, utiliza el formato español de España (es-ES).
+### `getLongTime(locale = "es-ES")`
 
-Ejemplo de uso:
+🕒 Devuelve la fecha y hora actual en formato largo y localizado.
+
+```js
 const { getLongTime } = require('./src/index');
-console.log(getLongTime()); // ejemplo: "domingo, 25 de mayo de 2025, 12:34:56 GMT+2"
+console.log(getLongTime()); // Ejemplo: "domingo, 25 de mayo de 2025, 12:34:56 GMT+2"
+```
 
-Notas
-No compartas tu clave API públicamente.
-El archivo config.js nunca debe subirse a repositorios públicos.
-Si tienes problemas de cuota con OpenAI, revisa tu panel de uso y facturación.
-Contacto
-Autor: Juan Esteban Arbelaez Durango
-Correo: je578400@gmail.com
-LinkedIn: esteban-arbelaez-082933226
-GitHub: EstebanDs03
+---
 
-¡Si tienes dudas o sugerencias, no dudes en contactarme!
+## ⚠️ Notas
 
-Licencia
-MIT License
+- No compartas tu clave API públicamente.
+- `config.js` **nunca** debe subirse a repositorios.
+- Revisa tu panel de OpenAI si tienes errores por cuota o facturación.
+
+---
+
+## 👤 Autor
+
+**Juan Esteban Arbeláez Durango**  
+📧 je578400@gmail.com  
+💼 [LinkedIn](https://www.linkedin.com/in/esteban-arbeláez-082933226/)  
+🐙 [GitHub](https://github.com/EstebanDs03)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
+
+---

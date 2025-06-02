@@ -1,11 +1,12 @@
-<h1 align="center">🛠️ Herramientas Node.js</h1>
+# 🛠️ Herramientas Node.js
+
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
-> Este proyecto contiene ejemplos y utilidades en **Node.js** para el manejo de archivos, fechas y uso de la API de **OpenAI** para transcripción de audio 🎧.
+Este proyecto contiene ejemplos y utilidades en **Node.js** para el manejo de archivos, fechas y uso de la API de **OpenAI** para transcripción de audio 🎧.
 
 ---
 
@@ -43,78 +44,6 @@ cd tu-repo-aqui
 
 # 3. Instala las dependencias
 npm install node-fetch@2 form-data
-```
-
----
-
-## 🔐 Configuración
-
-Crea un archivo `config.js` en la raíz con este contenido:
-
-```js
-module.exports = {
-  openaiApiKey: "TU_API_KEY_AQUI"
-};
-```
-
-📌 **Nota:** `config.js` está en `.gitignore` para proteger tu clave.
-
----
-
-## 🚀 Uso
-
-Ejecuta los scripts con Node:
-
-```bash
-node fechas.js
-node fs.js
-node fs-openai.js
-```
-
-🎧 Para usar la transcripción de audio, asegúrate de tener saldo o cuota activa en tu cuenta de OpenAI.
-
----
-
-## 📦 Funciones de Fechas
-
-Este proyecto incluye funciones simples para trabajar con fechas y horas en JavaScript.
-
-### `getTimestamp()`
-
-📅 Devuelve la marca de tiempo actual en milisegundos desde Epoch.
-
-```js
-const { getTimestamp } = require('./src/index');
-console.log(getTimestamp()); // Ejemplo: 1716643200000
-```
-
-### `getLongTime(locale = "es-ES")`
-
-🕒 Devuelve la fecha y hora actual en formato largo y localizado.
-
-```js
-const { getLongTime } = require('./src/index');
-console.log(getLongTime()); // Ejemplo: "domingo, 25 de mayo de 2025, 12:34:56 GMT+2"
-```
-
----
-
-## ⚠️ Notas
-
-- No compartas tu clave API públicamente.
-- `config.js` **nunca** debe subirse a repositorios.
-- Revisa tu panel de OpenAI si tienes errores por cuota o facturación.
-
----
-
-## 👤 Autor
-
-**Juan Esteban Arbeláez Durango**  
-📧 je578400@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/esteban-arbeláez-082933226/)  
-🐙 [GitHub](https://github.com/EstebanDs03)
-
----
 
 ## 📄 Licencia
 

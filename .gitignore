@@ -7,6 +7,9 @@ dist/
 build/
 .env
 
+# Configuración privada
+config.js
+
 # VSCode
 .vscode/
 

@@ -69,7 +69,7 @@ const audioPath =
   "./Audios/GEEZYDEE  KRIS R - PARCHE TRANQUI  (VIDEO OFICIAL).mp3";
 
 // Tu API Key de OpenAI (NO la compartas públicamente)
-const { openaiApiKey } = require("./config");
+const { openaiApiKey } = require("../config/config");
 
 // Llama a la función y maneja la respuesta
 transcribeAudio(audioPath, openaiApiKey)

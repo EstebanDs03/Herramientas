@@ -1,118 +1,64 @@
+
 # 🛠️ Herramientas Node.js
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-Este proyecto contiene ejemplos y utilidades en **Node.js** para el manejo de archivos, fechas y uso de la API de **OpenAI** para transcripción de audio 🎧.
-
----
+Proyecto desarrollado por **Juan Esteban Arbelaez Durango** para demostrar el uso de diversas herramientas del entorno Node.js, como manejo de archivos, fechas, procesos, seguridad, streams, monitoreo del sistema, y más.
 
 ## 📁 Estructura del Proyecto
 
-- `fechas.js`  
-  📆 Uso de una librería personalizada para el manejo de fechas.
+```
+src/
+├── Audios/                     # Archivos de audio
+├── config/                    # Configuración general
+├── fechas/                    # Manejo de fechas personalizadas
+├── fs/                        # Operaciones con el sistema de archivos
+├── Libros/                    # Lectura y escritura de archivos de texto
+├── os/                        # Monitoreo del sistema operativo
+├── procesos/                  # Procesos del sistema
+├── seguridad/                # Funciones de seguridad y encriptación
+├── server/                    # Servidor básico
+├── streams/                   # Uso de Streams en Node.js
+├── main.js                    # Punto de entrada principal
+```
 
-- `fs.js`  
-  📄 Operaciones básicas con archivos: crear, leer, actualizar y eliminar usando `fs`.
-
-- `fs-openai.js`  
-  🧠 Transcripción de archivos de audio con la API de **OpenAI Whisper**.
-
-- `config.js`  
-  🔐 Contiene la clave API de OpenAI *(no incluido por seguridad)*.
-
----
-
-## ✅ Requisitos
-
-- [Node.js](https://nodejs.org/) v16 o superior
-- npm
-
----
-
-## ⚙️ Instalación
+## 📦 Instalación
 
 ```bash
-# 1. Clona el repositorio
-git clone https://github.com/EstebanDs03/Herramientas.git
-
-# 2. Entra en el directorio
-cd Herramientas
-
-# 3. Instala las dependencias
-npm install node-fetch@2 form-data
+git clone https://github.com/tuusuario/herramientas.git
+cd herramientas
+npm install
 ```
 
----
+## 🚀 Ejecución
 
-## 🔐 Configuración
-
-Crea un archivo `config.js` en la raíz con este contenido:
-
-```js
-module.exports = {
-  openaiApiKey: "TU_API_KEY_AQUI"
-};
-```
-
-📌 **Nota:** `config.js` está en `.gitignore` para proteger tu clave.
-
----
-
-## 🚀 Uso
+Ejecuta el archivo principal con Node.js:
 
 ```bash
-node fechas.js
-node fs.js
-node fs-openai.js
+node src/main.js
 ```
 
-🎧 Para usar la transcripción de audio, asegúrate de tener saldo o cuota activa en tu cuenta de OpenAI.
+## 📚 Funcionalidades
 
----
+- **Lectura y escritura de archivos** (`fs`)
+- **Manejo de fechas** usando `fechas_esteban_arbelaez`
+- **Procesamiento de streams**
+- **Monitoreo de recursos del sistema operativo**
+- **Simulación de servidor básico**
+- **Cifrado y seguridad básica**
+- **Automatización con procesos del sistema**
 
-## 📦 Funciones de Fechas
+## 🔧 Tecnologías
 
-### `getTimestamp()`
+- Node.js
+- Librerías externas:
+  - `node-fetch`
+  - `form-data`
+  - `fechas_esteban_arbelaez` (módulo personalizado)
 
-📅 Devuelve la marca de tiempo actual en milisegundos desde Epoch.
+## 👨‍💻 Autor
 
-```js
-const { getTimestamp } = require('./src/index');
-console.log(getTimestamp());
-```
-
-### `getLongTime(locale = "es-ES")`
-
-🕒 Devuelve la fecha y hora actual en formato largo y localizado.
-
-```js
-const { getLongTime } = require('./src/index');
-console.log(getLongTime());
-```
-
----
-
-## ⚠️ Notas
-
-- No compartas tu clave API públicamente.
-- `config.js` **nunca** debe subirse a repositorios.
-- Revisa tu panel de OpenAI si tienes errores por cuota o facturación.
-
----
-
-## 👤 Autor
-
-**Juan Esteban Arbeláez Durango**  
+**Juan Esteban Arbelaez Durango**  
 📧 je578400@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/esteban-arbeláez-082933226/)  
-🐙 [GitHub](https://github.com/EstebanDs03)
-
----
 
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
-
----
+Este proyecto está bajo la licencia MIT
